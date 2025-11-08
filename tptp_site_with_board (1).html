@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TPTP | Texas Prison Transparency Project</title>
+  <meta name="description" content="Promoting Transparency, Accountability, and Rehabilitation in the Texas Prison System" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#0B3A6A;
+      --accent:#CBA135;
+      --dark:#0F172A;
+      --light:#F8FAFC;
+      --text:#0f172a;
+      --muted:#334155;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:#ffffff;
+      line-height:1.5;
+    }
+    a{color:var(--primary);text-decoration:none}
+    a:hover{text-decoration:underline}
+    /* Nav */
+    .nav{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:saturate(180%) blur(8px);
+      background:rgba(255,255,255,.9);
+      border-bottom:1px solid #e5e7eb;
+    }
+    .nav-inner{
+      max-width:1200px;margin:0 auto;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:12px 20px;
+    }
+    .brand{font-family:Montserrat,Inter,sans-serif;font-weight:800;color:var(--primary)}
+    .menu{display:flex;gap:18px;flex-wrap:wrap}
+    .menu a{font-weight:500;color:var(--dark)}
+    .menu a:hover{color:var(--primary)}
+    /* Hero */
+    .hero{
+      background:linear-gradient(180deg,#0B3A6A 0%,#0F172A 100%);
+      color:#fff;
+      text-align:center;
+      padding:120px 20px;
+    }
+    .hero h1{
+      font-family:Montserrat,Inter,sans-serif;
+      font-size:44px;line-height:1.15;margin:0 0 10px;
+    }
+    .hero p{opacity:.9;max-width:900px;margin:0 auto 16px}
+    .tagline{font-size:22px;font-weight:600;color:#fff;margin-top:8px}
+    .btn{
+      display:inline-block;border:0;cursor:pointer;
+      padding:12px 18px;border-radius:8px;font-weight:600;
+    }
+    .btn-primary{background:var(--accent);color:var(--dark)}
+    .btn-outline{
+      color:#fff;border:2px solid #fff;background:transparent;
+    }
+    .stack{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    /* Sections */
+    section{padding:72px 20px}
+    .wrap{max-width:1200px;margin:0 auto}
+    .narrow{max-width:900px;margin:0 auto}
+    .light{background:var(--light)}
+    h2{
+      font-family:Montserrat,Inter,sans-serif;
+      font-size:32px;margin:0 0 14px;color:var(--dark);
+    }
+    .divider{
+      width:120px;height:1px;background:var(--accent);
+      margin:16px 0 24px;
+    }
+    /* Columns */
+    .cols{
+      display:grid;gap:28px;grid-template-columns:1fr;
+    }
+    @media(min-width:900px){
+      .cols{grid-template-columns:1fr 1fr}
+    }
+    .card{
+      background:#fff;border-radius:16px;
+      box-shadow:0 6px 24px rgba(2,6,23,.08);
+      padding:22px;border-left:4px solid var(--accent);
+    }
+    ul{padding-left:18px;margin:0}
+    /* Grid cards */
+    .grid{display:grid;gap:18px}
+    @media(min-width:900px){
+      .grid{grid-template-columns:repeat(3,1fr)}
+    }
+    .proj{background:#fff;border-radius:16px;border:1px solid #e5e7eb;padding:18px}
+    .proj h3{margin:0 0 8px;color:var(--primary)}
+    /* Get involved */
+    .cta{background:var(--primary);color:#fff}
+    .cta h2{color:#fff}
+    .cta .btn-primary{background:var(--accent);color:var(--dark)}
+    .cta .btn-outline{border-color:#fff}
+    /* Contact */
+    .contact-list{list-style:none;padding:0;margin:0}
+    .contact-list li{margin:6px 0}
+    /* Footer */
+    footer{
+      background:var(--dark);color:#fff;padding:20px;
+      border-top:2px solid var(--accent);text-align:center
+    }
+    /* Bios */
+    .bio{margin-bottom:26px}
+    .goldrule{height:1px;background:var(--accent);width:160px;margin:14px 0 22px}
+    /* Small tweaks */
+    .spacer{height:6px}
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">TPTP | Texas Prison Transparency Project</div>
+      <div class="menu">
+        <a href="#mission">Mission</a>
+        <a href="#who">Who We Are</a>
+        <a href="#what">What We Do</a>
+        <a href="#projects">Projects</a>
+        <a href="#board">Board</a>
+        <a href="#podcast">Podcast</a>
+        <a href="#get-involved">Get Involved</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="wrap">
+      <h1>TPTP | Texas Prison Transparency Project</h1>
+      <p>Promoting Transparency, Accountability, and Rehabilitation in the Texas Prison System</p>
+      <div class="tagline">No Longer the Voiceless</div>
+      <div class="stack" style="margin-top:24px;">
+        <a class="btn btn-primary" href="https://www.zeffy.com/en-US/donation-form/texas-prison-transparency-project" target="_blank" rel="noopener">Donate Now</a>
+        <a class="btn btn-outline" href="#get-involved">Volunteer</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="mission" class="light">
+    <div class="narrow">
+      <h2>Our Mission</h2>
+      <div class="divider"></div>
+      <p>To shine a light on the truth inside Texas prisons by promoting <strong>transparency, accountability, and rehabilitation</strong> for both incarcerated individuals and correctional staff. We believe in building bridges — not walls — between communities, families, and the justice system.</p>
+    </div>
+  </section>
+
+  <section id="who">
+    <div class="narrow">
+      <h2>Who We Are</h2>
+      <div class="divider"></div>
+      <p><strong>The Texas Prison Transparency Project (TPTP)</strong> is a 501(c)(3) nonprofit organization dedicated to transforming the Texas Department of Criminal Justice (TDCJ) through advocacy, education, and collaboration.</p>
+      <p>Founded by <strong>Ashleen Gaddy</strong>, TPTP unites families, former inmates, staff, and reform advocates to create real, measurable change across the Texas prison system.</p>
+    </div>
+  </section>
+
+  <section id="what">
+    <div class="wrap cols">
+      <div>
+        <h2>What We Do</h2>
+        <div class="divider"></div>
+        <ul>
+          <li>Transparency Reports</li>
+          <li>Advocacy &amp; Education</li>
+          <li>Family &amp; Re-entry Support</li>
+        </ul>
+      </div>
+      <aside class="card">
+        <h3>In-Facility Mentorship &amp; Advocacy</h3>
+        <p>We proudly enter <strong>any and all correctional facilities</strong> to teach, mentor, and rally inmates toward personal growth, accountability, and positive cultural change. Our mission is to inspire transformation from within — giving hope, purpose, and education to those who need it most.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="projects" class="light">
+    <div class="wrap">
+      <h2>Projects &amp; Campaigns</h2>
+      <div class="divider"></div>
+      <div class="grid">
+        <div class="proj">
+          <h3>Capt. Joe Byrd Cemetery Dignity Memorial Project</h3>
+          <p>A historical preservation and memorial effort to honor those laid to rest without family recognition. This project restores dignity through proper markers, cleanup efforts, and remembrance ceremonies.</p>
+        </div>
+        <div class="proj">
+          <h3>No Walls Between Us (Christmas Campaign)</h3>
+          <p>Holiday support for families and children impacted by incarceration, focused on unity and hope.</p>
+        </div>
+        <div class="proj">
+          <h3>Positive Prison Culture Initiative</h3>
+          <p>Promoting rehabilitative, humane environments for staff and the incarcerated through education and dialogue.</p>
+        </div>
+        <div class="proj">
+          <h3>Ink of Renewal / Master’s Canvas Program</h3>
+          <p>Vocational creativity and mentorship pathways that emphasize purpose, skill, and sobriety.</p>
+        </div>
+        <div class="proj">
+          <h3>Parole Resources &amp; Mentoring (Pre and Post Release)</h3>
+          <p>Education, guidance, and mentorship before and after release: parole process prep, re-entry planning, employment readiness, and long-term success through accountability and community support.</p>
+        </div>
+        <div class="proj">
+          <h3>Training for Second Chance Employers</h3>
+          <p>Equip leaders to understand the post-incarceration mindset, communicate effectively, and build supportive, productive, trauma-informed workplaces.</p>
+        </div>
+        <div class="proj">
+          <h3>City of Lancaster Christmas Parade – “Believe” Float</h3>
+          <p>Featuring families and children of both incarcerated individuals and correctional staff — unity and restoration.</p>
+        </div>
+        <div class="proj">
+          <h3>Pre-Incarceration Workshops for Inmates &amp; Families</h3>
+          <p>For individuals awaiting transfer from county facilities to TDCJ: what to expect, communication and visitation, emotional resilience, family support structures, and rehabilitation pathways from day one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Board Section -->
+  <section id="board" class="light">
+    <div class="narrow">
+      <h2>Board of Directors & Advisory Board Biographies</h2>
+      <div class="divider"></div>
+
+      <div class="bio">
+        <h3>Ashleen Gaddy — President &amp; Founder</h3>
+        <div class="goldrule"></div>
+        <p>Ashleen Gaddy is the visionary founder and President of the Texas Prison Transparency Project (TPTP). A passionate advocate for prison reform and the mother of an incarcerated son, Ashleen has dedicated her life to creating transparency, accountability, and humanity within the Texas Department of Criminal Justice. She is also the co-founder of HeartCheck Prison Strategies Group LLC, which partners with correctional facilities and re-entry programs to build positive prison culture and community trust. Her leadership emphasizes collaboration between staff, inmates, and families to achieve sustainable reform and rehabilitation across the state.</p>
+      </div>
+
+      <div class="bio">
+        <h3>Shannon Marshall — Vice President</h3>
+        <div class="goldrule"></div>
+        <p>Shannon Marshall serves as Vice President of TPTP, bringing over 25 years of lived experience inside the Texas prison system. His journey from incarceration to leadership embodies TPTP’s mission of transformation and advocacy. Shannon facilitates communication between current inmates, their families, and correctional staff—encouraging open dialogue, personal growth, and positive cultural change. His first-hand perspective drives many of TPTP’s mentorship and in-unit educational initiatives, including pre-incarceration workshops and re-entry readiness programs.</p>
+      </div>
+
+      <div class="bio">
+        <h3>Steven Pham — Treasurer</h3>
+        <div class="goldrule"></div>
+        <p>As Treasurer, Steven Pham provides essential oversight of TPTP’s financial planning, compliance, and budgeting. With a professional background that combines business acumen and human services, Steven ensures that every dollar raised directly supports programs benefiting incarcerated individuals, their families, and the communities they return to. He also assists with HeartCheck’s Second-Chance Employer Training initiative, helping businesses build trauma-informed workplaces that empower returning citizens.</p>
+      </div>
+
+      <div class="bio">
+        <h3>Gaye Weintraub — Secretary</h3>
+        <div class="goldrule"></div>
+        <p>Gaye Weintraub serves as Secretary of TPTP, managing organizational documentation, board records, and administrative processes. Known for her strong communication skills and community engagement, Gaye supports the coordination of outreach events, correspondence, and board operations. Her dedication to detail helps maintain the transparency and accountability that define the organization’s values.</p>
+      </div>
+
+      <div class="bio">
+        <h3>Monika Shepherd — Director of Community &amp; Family Services</h3>
+        <div class="goldrule"></div>
+        <p>Monika Shepherd leads TPTP’s efforts to strengthen families and communities impacted by incarceration. She oversees programs providing emotional support, resource navigation, and advocacy training for loved ones of incarcerated individuals. Monika is deeply committed to helping families maintain stability and connection throughout the incarceration and re-entry process, ensuring that no one faces the system alone.</p>
+      </div>
+
+      <div class="bio">
+        <h3>Hillary Randall — Director of Media &amp; Communications</h3>
+        <div class="goldrule"></div>
+        <p>As Director of Media &amp; Communications, Hillary Randall manages TPTP’s public outreach, storytelling, and social media presence. Her work ensures that the voices of incarcerated individuals and their families are heard across platforms. Hillary’s background in advocacy and creative media allows her to transform complex justice issues into compelling narratives that inspire empathy and action statewide.</p>
+      </div>
+
+      <div class="bio">
+        <h3>Jamie Lynn Byers — Director of Research &amp; Development</h3>
+        <div class="goldrule"></div>
+        <p>Jamie Lynn Byers heads TPTP’s research division, focusing on data-driven solutions to systemic issues in Texas prisons. She manages reports on inmate deaths, policy trends, and conditions across TDCJ facilities, and collaborates with educators, researchers, and reform advocates to develop evidence-based strategies for humane correctional practices. Jamie’s work helps TPTP back every initiative with credible, actionable information.</p>
+      </div>
+
+      <div class="bio">
+        <h3>Advisory Board</h3>
+        <div class="goldrule"></div>
+        <h4>Russell Byrd — Corrections Specialist</h4>
+        <p>Russell Byrd brings decades of experience in correctional operations and institutional management to TPTP’s Advisory Board. His professional background within TDCJ and his commitment to ethical corrections provide invaluable insight into operational reform, staff wellness, and policy change. Russell advises the organization on strategies for improving transparency, morale, and accountability at every level of the system.</p>
+        <div class="goldrule"></div>
+        <h4>Trey Robertson — Juvenile Services &amp; Gang Intervention</h4>
+        <p>Trey Robertson serves on TPTP’s Advisory Board as a specialist in juvenile justice and gang intervention. Having worked directly with at-risk youth and young offenders, Trey brings deep understanding of the social and environmental factors that contribute to incarceration. His guidance helps shape TPTP’s early intervention programs, mentorship partnerships, and violence prevention outreach across Texas communities.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="podcast">
+    <div class="narrow">
+      <h2>The Texas Prison Transparency Project Podcast</h2>
+      <div class="divider"></div>
+      <p><strong>Next Episode:</strong> Thanksgiving Night — “No Longer the Voiceless.” Send your shout-outs to loved ones — we’ll read them live on the show!</p>
+      <div class="stack">
+        <a class="btn btn-primary" href="https://www.facebook.com/TexasPrisonTransparencyProject" target="_blank" rel="noopener">Listen on Facebook</a>
+        <a class="btn btn-outline" href="mailto:thetxprisonproject@gmail.com">Send a Shout-Out</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="get-involved" class="cta">
+    <div class="wrap">
+      <h2>Get Involved</h2>
+      <div class="divider" style="background:#fff;opacity:.8"></div>
+      <ul>
+        <li>Volunteer with our advocacy or outreach teams</li>
+        <li>Partner with us as a Second-Chance Employer</li>
+        <li>Sponsor an event or donate items for campaigns</li>
+        <li>Share our mission on social media</li>
+        <li><strong>County and City Jails:</strong> Partner with us to bring <em>Pre-Incarceration Workshops</em> to your facilities.</li>
+      </ul>
+      <div class="spacer"></div>
+      <div class="stack">
+        <a class="btn btn-primary" href="https://www.zeffy.com/en-US/donation-form/texas-prison-transparency-project" target="_blank" rel="noopener">Donate Now</a>
+        <a class="btn btn-outline" href="mailto:thetxprisonproject@gmail.com">Volunteer</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="narrow">
+      <h2>Contact Us</h2>
+      <div class="divider"></div>
+      <ul class="contact-list">
+        <li>📧 <a href="mailto:thetxprisonproject@gmail.com">thetxprisonproject@gmail.com</a></li>
+        <li>📞 <a href="tel:+18179712225">817-971-2225</a></li>
+        <li>📍 Texas, USA</li>
+        <li>🌐 <a href="https://www.facebook.com/TexasPrisonTransparencyProject" target="_blank" rel="noopener">Facebook: Texas Prison Transparency Project</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © TPTP — No Longer the Voiceless.
+  </footer>
+
+</body>
+</html>
